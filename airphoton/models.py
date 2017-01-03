@@ -5,11 +5,11 @@ from django.db import models
 # Create your models here.
 
 class Team(models.Model):
-    name = models.CharField(max_lengh=256, db_index=True)
+    name = models.CharField(max_length=256, db_index=True)
 
 
 class DataSet(models.Model):
-    team = models.ForeignKeyField(Team)
+    team = models.ForeignKey(Team)
     name = models.CharField(max_length=256, db_index=True)
 
 
