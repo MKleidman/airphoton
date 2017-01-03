@@ -1,1 +1,4 @@
 *.pyc
+airphoton.egg-info/
+build/
+dist/
